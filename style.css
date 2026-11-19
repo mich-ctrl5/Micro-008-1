@@ -1,0 +1,86 @@
+/* General Page Layout and Custom Color Theme */
+body {
+  font-family: Arial, sans-serif;
+  width: 70%;
+  margin: auto;
+  background-color: #f4f7f9;
+  color: #1f2933;
+}
+
+h1 {
+  background-color: #1e3a5f;
+  color: #ffffff;
+  margin-top: 1em;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+h2 {
+  color: #1e3a5f;
+}
+
+/* Flexbox Navigation Menu */
+#nav_menu ul {
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Try: flex-start, center, space-between, space-around */
+  height: 100px;
+  align-items: center;     /* Try: center, flex-start, flex-end, stretch */
+  flex-wrap: wrap;
+  gap: 8px;
+  background-color: #d9e2ec;
+  border-radius: 6px;
+}
+
+#nav_menu ul li {
+  /* float: left removed for Flexbox */
+}
+
+#nav_menu ul li a {
+  text-align: center;
+  display: block;
+  /* width: 250px removed; replaced with 2em left/right padding */
+  padding: 1em 2em;
+  text-decoration: none;
+  background-color: #2b6cb0;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.25s ease;
+}
+
+#nav_menu ul li a:hover {
+  background-color: #1a4971;
+}
+
+#nav_menu ul li a.lastitem {
+  border-right: none;
+}
+
+#nav_menu ul li a.current {
+  color: #ffd166;
+}
+
+/* Main Content Styling */
+main {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #cbd2d9;
+  border-radius: 4px;
+}
+
+ul.square {
+  list-style-type: square;
+}
